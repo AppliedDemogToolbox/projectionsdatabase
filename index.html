@@ -1,0 +1,369 @@
+
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+   <meta NAME="Description" CONTENT="State and Local Population Projections Database">
+   <meta NAME="AUTHOR" CONTENT="Eddie Hunsinger">
+   <meta NAME="KEYWORDS" CONTENT="State and Local Population Projections Database, demography, population projections">
+   <title>Population Projections Database</title>
+
+<link rel="shortcut icon" href="https://github.com/AppliedDemogToolbox/applieddemogtoolbox.github.io/raw/master/Images/ToolBoxIcon.png">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#projectionsearchInput {  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  color: #505050;
+  padding: 7px 7px 7px 7px;
+  border: 1px solid #006699;
+  margin-bottom: 10px;
+}
+
+#methodselect {  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 33%;
+  font-size: 12px;
+  color: #505050;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid #006699;
+  margin-bottom: 10px;
+}
+
+#geogselect {  
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 33%;
+  font-size: 12px;
+  color: #505050;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid #006699;
+  margin-bottom: 10px;
+}
+
+#projectionsearchUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projectionsearchUL li a {
+  border: 1px solid #ffffff;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #ffffff;
+  padding: 10px 0px 0px 0px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #006699;
+  display: block;
+}
+
+#projectionsearchUL li a.header {
+  background-color: #ffffff;
+  color: #505050;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: default;
+}
+
+#projectionsearchUL li a:hover:not(.header) {
+  background-color: #ffffff;
+}
+
+hr {
+  height:0; 
+  border:0; 
+  border-top:1px solid #505050; 
+}
+
+</style>
+
+</head>
+
+<H2 id="TopNotes"></H2>
+
+<body TEXT="#505050"   LINK="006699" ALINK="006699" VLINK="006699">
+
+<table WIDTH="100%" NOSAVE >
+<table BORDER=0 CELLPADDING=0 align="center" valign="bottom">
+
+<tr NOSAVE>
+<td NOSAVE>
+<div align=center> 
+<br></div>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+<table WIDTH="100%" nosave="" ></table>
+<blockquote></blockquote>
+<table valign="bottom" align="center" border="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top" width="750">
+
+<font FACE="HELVETICA"> 
+</center><p style="margin:0px;font-size:14px">
+This State and Local Population Projections Database is a collection of published population projections... 
+[Relationship to the Applied Demography Toolbox...] [Use/licenseinfo...] [Accessibility (ensure)...]
+...questions, recommendations, or <a STYLE="text-decoration:none" href="#Additions">additions</a>...contact...
+please send a message to me 
+(<a STYLE="text-decoration:none" href="https://edyhsgr.github.io/">Eddie Hunsinger</a>) at 
+<a STYLE="text-decoration:none" href="mailto:edyhsgr@gmail.com">edyhsgr@gmail.com</a>.
+<a STYLE="text-decoration:none" href="#Acknowledgments">Acknowledgments</a>. 
+<a href="https://github.com/AppliedDemogToolbox/ProjectionsDatabase" style="text-decoration: none;" target="_blank">
+<img src="https://github.com/AppliedDemogToolbox/applieddemogtoolbox.github.io/raw/master/Images/GitHub-Mark-32px.png" alt="GitHub link" title="GitHub" width="13" height="13" style="border: 0;"/></a>
+<!--<a href="https://twitter.com/ApplDemogToolbx" style="text-decoration: none;" target="_blank"> -->
+<!--<img src="https://abs.twimg.com/favicons/favicon.ico" alt="Twitter link" title="Twitter" width="13" height="13" style="border: 0;"/></a> -->
+</p>
+
+<H2 id="TopSearch"></H2>
+
+</strong><center><br>
+<img src="https://github.com/AppliedDemogToolbox/ProjectionsDatabase/raw/main/Images/People.png" alt="Database logo" title="State and Local Population Projections Database" height="100">
+
+<table valign="bottom" align="left" border="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top" width="750">
+
+</font>
+
+<input type="text"  TEXT="#006699" id="projectionsearchInput" onkeyup="projectionsearchFunction()" 
+placeholder="Filter by method attributes or geographic level">
+
+<select id="methodselect" onChange="projectionsearchFunction()">
+	<option value="all">Method attributes (all)</option>
+	<option value="cc">Cohort component</option>
+	<option value="ccr">Cohort change ratio</option>
+	<option value="empl">Employment-based</option>
+	<option value="hous">Housing-based</option>
+	<option value="extr">Extrapolative</option>
+	<option value="struct">Structural</option>
+	<option value="td">Top-down</option>
+</select>
+
+<select id="geogselect" onChange="projectionsearchFunction()">
+	<option value="all">Geographic level (all)</option>
+	<option value="state">State</option>
+	<option value="region">Region</option>	
+	<option value="county">County</option>
+	<option value="subcounty">Sub-county</option>
+</select>
+
+<ul id="projectionsearchUL">
+<br><br>
+<b>[DATABASE FILE LINK HERE?]</b>
+<br><br>
+<b>
+  <ul id="projectionsearchUL"><u>Individual Publications and Information Indexed Here [would also include scanned items no longer online]</u></br>
+  <li data-method="ccr" data-geog="state, county" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#madeup1">Made-up State's 1970 to 2000 County Population Projections<p style="margin:0px;font-size:15px;font-weight:normal">(cohort change ratios, state and county)</p></a></li>
+  <li data-method="cc" data-geog="state"><a STYLE="text-decoration:none" href="#madeup2">Another Made-up State's 1990 to 2000 Population Forecast<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, state)</p></a></li>
+  <li data-method="empl, struct" data-geog="region"><a STYLE="text-decoration:none" href="#madeup3">Made-up University's Made-up-metro-area 1985 to 1990 Forecast<p style="margin:0px;font-size:15px;font-weight:normal">(employment-based, structural, regional)</p></a></li>
+</ul><br><br>
+  <ul id="projectionsearchUL"><u>Individual sPublications Held Elsewhere [would include items that aren't or can't be recorded for tabulation/comparison]</u></br>
+  <li data-method="ccr" data-geog="state, county" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#madeup4">Made-up University's Nationwide State and County Projections, 2010 to 2100<p style="margin:0px;font-size:15px;font-weight:normal">(cohort change ratios, state and county)</p></a></li>
+  <li data-method="extr" data-geog="county"><a STYLE="text-decoration:none" href="#madeup5">Made-up County's 1950 to 1970 County Projection<p style="margin:0px;font-size:15px;font-weight:normal">(extrapolative, county)</p></a></li>
+</b>
+
+<!- Many thanks https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list and esp JKVink! ->
+<script>
+function projectionsearchFunction() {
+    var input, filter, methodFilter, geogFilter, ul, li, a, i, allfound;
+
+    input = document.getElementById("projectionsearchInput");
+    filter = input.value.toUpperCase().trim().split(" ");
+
+	var method = document.getElementById("methodselect").selectedIndex;
+	if (method > 0) {methodFilter = document.getElementById("methodselect").options[method].value} else {methodFilter = ""}
+
+	var geog = document.getElementById("geogselect").selectedIndex;
+	if (geog > 0) {geogFilter = document.getElementById("geogselect").options[geog].value} else {geogFilter = ""}
+
+    ul = document.getElementById("projectionsearchUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) 
+{		allfound = true;
+// text search
+        a = li[i].getElementsByTagName("a")[0].innerHTML.toUpperCase();
+		for (var w = 0; w < filter.length; w++) {
+	        if (a.indexOf(filter[w].trim()) == -1) {
+	            allfound = false;
+				break;
+    	    }
+		}
+// method search
+        if (allfound && methodFilter != "") {
+			if (li[i].dataset.method) {
+				methodlist = li[i].dataset.method.split(/[\s,]+/)
+		        if (methodlist.indexOf(methodFilter) == -1) {
+    		        allfound = false;
+				
+   	    }
+    		}
+    }
+// geog search
+        if (allfound && geogFilter != "") {
+			if (li[i].dataset.geog) {
+				geoglist = li[i].dataset.geog.split(/[\s,]+/)
+		        if (geoglist.indexOf(geogFilter) == -1) {
+    		        allfound = false;
+   	    		}
+			} else {
+   		        allfound = false}
+		}
+        li[i].style.display = allfound?"":"none";
+    }
+}
+</script>
+<!- Many thanks https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list and esp JKVink! ->
+
+<strong><font FACE="HELVETICA">
+<span style="line-height:1.75em;">
+</strong>
+</span>
+
+<br><br>
+<H2 id="Additions" STYLE="margin:0px;font-size:12px"><br>
+<b><u>Add a Population Projection to the database</u></b></H2>
+<p style="margin:0px;font-size:12px">
+-----
+[Determining whether to link or embed (with dropdown) a custom survey
+<a STYLE="text-decoration:none;display:inline;padding:0" href="https://shiny.demog.berkeley.edu/eddieh/ProjectionError/" target="_blank">prototype/proof-of-concept</a> (thanks to
+https://daattali.com/shiny/persistent-data-storage/ and friends), or utilitize (and link or embed, ideally with dropdown) a service like SurveyMonkey.]
+-----
+Notes: You don't need to answer all of the questions. Please answer any questions you can and want to. 
+You may provide data for any projections you know about. *You can provide multiple submissions to share error information for multiple projection years from a single report or project.
+
+-----
+Respondent name: [Type in text] Hide?: [Select yes or no]
+Respondent email: [Type in text] Hide?: [Select yes or no]
+
+Area name: [Type in text] Hide?: [Select yes or no]
+Report web address or name: [Type in text] Hide?: [Select yes or no]
+
+Geographic level: [Select state, county, city, other [type in text]]
+Projection starting point: [Select from list of years]
+Projection ending point*: [Select from list of years]
+Estimated or actual starting point total population: [Type in value]
+Projected ending point total population: [Type in value]
+Estimated or actual ending point total population: [Type in value]
+
+Projection by geographic subarea?: [Select yes or no]
+Mean absolute percent error by subarea: [Type in value]
+Median absolute percent error by subarea: [Type in value]
+
+Projection by age?: [Select yes or no]
+Mean absolute percent error by age: [Type in value]
+Percent error for youngest age group ([Select age group]): [Type in value]
+Age group with highest percent error: [Type in age group] [Type in value]
+
+Projection methods used: [Select any of
+Cohort component based on historical demographic data with net migration [select yes or no], 
+Cohort component based on historical demographic data with in and out migration [select yes or no], 
+Cohort component including employment or other economic data [select yes or no], 
+Hamilton-Perry method (cohort change ratios) or similar [select yes or no], 
+Trend extrapolation of total population with linear growth? [select yes or no], 
+Trend extrapolation of total population with compounding growth? [select yes or no], 
+Trend extrapolation of total housing data? [select yes or no], 
+Trend extrapolation of total employment data? [select yes or no], 
+Top-down methods (such as constant-share, shift-share, share of growth, data raking/proportional fitting) [select yes or no], 
+Other? [type in text]]
+
+Comments or notes: [Text]
+
+[Submit]
+--
+Reviewed by administrator: [Yes or no]
+Administrator notes: [Text]
+-----
+-----
+-----
+<b><a STYLE="text-decoration:none" href="#TopNotes">^</a></b>
+</p>
+
+<H2 id="Acknowledgments" STYLE="margin:0px;font-size:12px"><br>
+<b><u>Acknowledgments and thanks</u></b></H2>
+<p style="margin:0px;font-size:12px">
+Acknowledgments and thanks...
+<b><a STYLE="text-decoration:none" href="#TopNotes">^</a></b>
+</p>
+
+<br><br><br>
+<ul id="projectionsearchUL">
+<hr>
+	
+<li data-method="ccr" data-geog="state, county">
+<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="" target="_blank">Made-up State's 1970 to 2000 County Population Projections
+<p style="margin:0px;;font-size:15px;font-weight:normal">(cohort change ratios, state and county)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Comments and notes including general information and controlled characteristics...
+&ndash;February 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-method="cc" data-geog="state">
+<H2 id="madeup2" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="" target="_blank">Another Made-up State's 1990 to 2000 Population Forecast
+<p style="margin:0px;;font-size:15px;font-weight:normal">(cohort component, state)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Comments and notes including general information and controlled characteristics...
+&ndash;February 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-method="empl, struct" data-geog="region">
+<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="" target="_blank">Made-up University's Made-up-metro-area 1985 to 1990 Forecast
+<p style="margin:0px;;font-size:15px;font-weight:normal">(employment, structural, regional)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Comments and notes including general information and controlled characteristics...
+&ndash;February 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-method="ccr" data-geog="state, county">
+<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="" target="_blank">Made-up University's Nationwide State and County Projections, 2010 to 2100
+<p style="margin:0px;;font-size:15px;font-weight:normal">(cohort change ratios, state and county)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Comments and notes including general information and controlled characteristics...
+&ndash;February 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-method="extr" data-geog="county">
+<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="" target="_blank">Made-up County's 1950 to 1970 County Projection
+<p style="margin:0px;;font-size:15px;font-weight:normal">(extrapolative, county)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+Comments and notes including general information and controlled characteristics...
+&ndash;February 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+	
+</ul>
+
+<br><br><br>
+</font></table>
+
+</font> 
+</body>
+</html>
+<br>
+
+</html>
