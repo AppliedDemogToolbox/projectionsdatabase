@@ -114,7 +114,7 @@ hr {
 </center><p style="margin:0px;font-size:14px">
 This State and Local Population Projections Database is a collection of population projection reports and related materials, stored as part of the
 <a STYLE="text-decoration:none" href="https://applieddemogtoolbox.github.io/">Applied Demography Toolbox</a>. 
-The collection is for independent analysis of population projections, and is not authoritative.  
+The collection is for independent analysis of population projections, and is not authoritative for any of the included works.  
 If you have questions, comments, or <a STYLE="text-decoration:none" href="#Additions">additions</a> for the page,
 please send a message to me 
 (<a STYLE="text-decoration:none" href="https://edyhsgr.github.io/">Eddie Hunsinger</a>) at 
@@ -145,13 +145,17 @@ placeholder="Filter by method attributes or geographic level">
 <select id="methodselect" onChange="projectionsearchFunction()">
 	<option value="all">Method attributes (all)</option>
 	<option value="cc">Cohort component</option>
-	<option value="ccr">Cohort change ratio</option>
+	<option value="ccr">Hamilton-Perry (cohort change ratios)</option>
+	<option value="extr">Trend extrapolation of total population</option>
 	<option value="empl">Employment-based</option>
 	<option value="hous">Housing-based</option>
-	<option value="extr">Extrapolative</option>
+	<option value="micro">Microsimulation</option>
+	<option value="td">Top-down adjustment</option>
+	<option value="ensem">Ensembling</option>
+	<option value="expost">Ex-post analysis</option>
+	<option value="scen">Scenario analysis</option>
 	<option value="stoch">Stochastic simulation</option>
 	<option value="struct">Structural</option>
-	<option value="td">Top-down</option>
 </select>
 
 <select id="geogselect" onChange="projectionsearchFunction()">
@@ -169,8 +173,8 @@ placeholder="Filter by method attributes or geographic level">
   <li data-method="cc, stoch" data-geog="state" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDA_California_State_2000to2050">Center on the Economics and Demography of Aging, California, 2000 to 2050<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, stochastic simulation, state)</p></a></li>
   <li data-method="cc, scen" data-geog="state"><a STYLE="text-decoration:none" href="#LSU_Louisiana_StateParish_2005to2030">Louisiana State University Department of Sociology, 2005 to 2030<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, scenario analysis, state and county)</p></a></li>
   <li data-method="empl, hous, scen" data-geog="state, county, region"><a STYLE="text-decoration:none" href="#ISER_Alaska_StateRegionBoroughCensusArea_2000to2025">Institute on Social and Economic Research, Alaska, 2000 to 2025<p style="margin:0px;font-size:15px;font-weight:normal">(employment-based, housing-based, scenario analysis, state, region and county)</p></a></li>
-  <li data-method="cc, td, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#AKDOL_Alaska_StateBoroughCensusArea_2017to2045">Alaska Department of Labor and Workforce Development, 2017 to 2045<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, top-down, scenario analysis, state and county)</p></a></li>
-  <li data-method="cc, td, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#AKDOL_Alaska_StateBoroughCensusArea_2015to2045">Alaska Department of Labor and Workforce Development, 2015 to 2045<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, top-down, scenario analysis, state and county)</p></a></li>
+  <li data-method="cc, td, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#AKDOL_Alaska_StateBoroughCensusArea_2017to2045">Alaska Department of Labor and Workforce Development, 2017 to 2045<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, top-down adjustment, scenario analysis, state and county)</p></a></li>
+  <li data-method="cc, td, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#AKDOL_Alaska_StateBoroughCensusArea_2015to2045">Alaska Department of Labor and Workforce Development, 2015 to 2045<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, top-down adjustment, scenario analysis, state and county)</p></a></li>
 </b>
 
 <!- Many thanks https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list and esp JKVink! ->
@@ -271,59 +275,42 @@ to invest in the project as part of my MLIS degree path.
 	
 <li data-method="cc, stoch" data-geog="state">
 <H2 id="#CEDA_California_State_2000to2050" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="" target="_blank">Center on the Economics and Demography of Aging, California, 2000 to 2050
+href="https://escholarship.org/uc/item/9x32c1kq" target="_blank">Center on the Economics and Demography of Aging, California, 2000 to 2050
 <p style="margin:0px;;font-size:15px;font-weight:normal">(cohort component, stochastic simulation, state)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
-Comments and notes including general information and controlled characteristics...
-&ndash;Eddie Hunsinger, April 2021
+<b>Report or project title:</b> SPECIAL REPORT: The Growth and Aging of California's Population: Demographic and FiscalProjections, Characteristics and Service Needs<br>
+<b>Brief description:</b> 
+"This report is part of a state-commissioned project undertaken after California enacted Senate Bill 910 (Vasconcellos, Statutes of 1999, Chapter 948), 
+mandating the Secretary of Health and Human Services to develop a plan to address the impending demographic, economic, and social changes triggered by 
+the state’s aging and increasingly diverse population." A related technical appendix is available 
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.393.318" target="_blank">at this link</a></b>.
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="hhttps://drive.google.com/file/d/1HzFl1QS82t2SBhUuwA9koOgQNQTNrBMH/view" target="_blank">File submission</a></b> 
+and <b><a STYLE="text-decoration:none;display:inline;padding:0" href="https://drive.google.com/file/d/1neah8U1dr4n-F5AxaU0Wou_DKETj7O5s/view" target="_blank">printed form</a></b>. 
+</b><br>
+&ndash;Information provided by Eddie Hunsinger, April 2021
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-method="cc" data-geog="state">
-<H2 id="madeup2" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="" target="_blank">Another Made-up State's 1990 to 2000 Population Forecast
-<p style="margin:0px;;font-size:15px;font-weight:normal">(cohort component, state)</p></a>
+<li data-method="empl, hous, scen" data-geog="state, county, region">
+<H2 id="#ISER_Alaska_StateRegionBoroughCensusArea_2000to2025" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://iseralaska.org/publications/?id=1015" target="_blank">Institute on Social and Economic Research, Alaska, 2000 to 2025
+<p style="margin:0px;;font-size:15px;font-weight:normal">(employment-based, housing-based, scenario analysis, state, region and county)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
-Comments and notes including general information and controlled characteristics...
-&ndash;February 2021
+<b>Report or project title:</b> Economic Projections for Alaska and the Southern Railbelt, 2000-2025<br>
+<b>Brief description:</b> (From page 13 of the report) 
+"The projections of economic and demographic variables for the state of Alaska and the South Central region presented 
+in this report were generated using the Institute of Social and Economic Research (ISER) MAP Econometric
+Modeling System. This modeling system combines an economic module, a demographic module, a fiscal module, a regionalization module, and a
+housing stock module." 
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="https://drive.google.com/file/d/1SEEK0IJbWzFaqvbI9QaYSh189HOsSNsk/view?usp=sharing" target="_blank">File submission</a></b> 
+and <b><a STYLE="text-decoration:none;display:inline;padding:0" href="https://drive.google.com/file/d/16-fZM-p-GVewMcNcYGflHt1kbt7elrIg/view?usp=sharing" target="_blank">printed form</a></b>.
+</b><br>
+&ndash;Information provided by Eddie Hunsinger, April 2021
 <b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
 </p></H2>
 
-<li data-method="empl, struct" data-geog="region">
-<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="" target="_blank">Made-up University's Made-up-metro-area 1985 to 1990 Forecast
-<p style="margin:0px;;font-size:15px;font-weight:normal">(employment, structural, regional)</p></a>
-</font></strong></H2>
-<p style="margin:0px;font-size:15px">
-Comments and notes including general information and controlled characteristics...
-&ndash;February 2021
-<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
-</p></H2>
-
-<li data-method="ccr" data-geog="state, county">
-<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="" target="_blank">Made-up University's Nationwide State and County Projections, 2010 to 2100
-<p style="margin:0px;;font-size:15px;font-weight:normal">(cohort change ratios, state and county)</p></a>
-</font></strong></H2>
-<p style="margin:0px;font-size:15px">
-Comments and notes including general information and controlled characteristics...
-&ndash;February 2021
-<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
-</p></H2>
-
-<li data-method="extr" data-geog="county">
-<H2 id="madeup1" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
-href="" target="_blank">Made-up County's 1950 to 1970 County Projection
-<p style="margin:0px;;font-size:15px;font-weight:normal">(extrapolative, county)</p></a>
-</font></strong></H2>
-<p style="margin:0px;font-size:15px">
-Comments and notes including general information and controlled characteristics...
-&ndash;February 2021
-<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
-</p></H2>
-	
 </ul>
 
 <br><br><br>
