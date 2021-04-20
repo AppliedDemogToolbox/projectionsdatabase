@@ -155,7 +155,7 @@ placeholder="Filter individual resources by source, period covered, method attri
 	<option value="expost">Ex-post analysis</option>
 	<option value="scen">Scenario analysis</option>
 	<option value="stoch">Stochastic simulation</option>
-	<option value="struct">Structural</option>
+	<option value="struct">Structural model</option>
 </select>
 
 <select id="geogselect" onChange="projectionsearchFunction()">
@@ -170,9 +170,11 @@ placeholder="Filter individual resources by source, period covered, method attri
 <br><br>
 <b>
   <ul id="projectionsearchUL"><u>Individual Resources Listed by Source and Period Covered</u></br>
-  <li data-method="cc, stoch" data-geog="state" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#CEDA_California_State_2000to2050">Center on the Economics and Demography of Aging, UC Berkeley, 2000 to 2050<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, stochastic simulation, state)</p></a></li>
+  <li data-method="cc, extr" data-geog="state, county" style="margin-top:-10px"><a STYLE="text-decoration:none" href="#OKCommerce_Oklahoma_StateCounty_2012to2075">Oklahoma Department of Commerce, 2012 to 2075<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, trend extrapolation of total population, state, county)</p></a></li>
+  <li data-method="scen, struct" data-geog="state, county, region"><a STYLE="text-decoration:none" href="#NVTax_Nevada_StateCountyCSA_2016to2035">Nevada Department of Taxation, 2016 to 2035<p style="margin:0px;font-size:15px;font-weight:normal">(scenario analysis, structural model, state, region, county)</p></a></li>
+  <li data-method="cc, stoch" data-geog="state"><a STYLE="text-decoration:none" href="#CEDA_California_State_2000to2050">Center on the Economics and Demography of Aging, UC Berkeley, 2000 to 2050<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, stochastic simulation, state)</p></a></li>
   <li data-method="cc, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#LSU_Louisiana_StateParish_2005to2030">Louisiana State University Department of Sociology, 2005 to 2030<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, scenario analysis, state and county)</p></a></li>
-  <li data-method="empl, hous, scen, struct" data-geog="state, county, region"><a STYLE="text-decoration:none" href="#ISER_Alaska_StateRegionBoroughCensusArea_2000to2025">Institute on Social and Economic Research, University of Alaska Anchorage, 2000 to 2025<p style="margin:0px;font-size:15px;font-weight:normal">(employment-based, housing-based, scenario analysis, structural, state, region and county)</p></a></li>
+  <li data-method="empl, hous, scen, struct" data-geog="state, county, region"><a STYLE="text-decoration:none" href="#ISER_Alaska_StateRegionBoroughCensusArea_2000to2025">Institute on Social and Economic Research, University of Alaska Anchorage, 2000 to 2025<p style="margin:0px;font-size:15px;font-weight:normal">(employment-based, housing-based, scenario analysis, structural model, state, region and county)</p></a></li>
   <li data-method="cc, td, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#AKDOL_Alaska_StateBoroughCensusArea_2017to2045">Alaska Department of Labor and Workforce Development, 2017 to 2045<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, top-down adjustment, scenario analysis, state and county)</p></a></li>
   <li data-method="cc, td, scen" data-geog="state, county"><a STYLE="text-decoration:none" href="#AKDOL_Alaska_StateBoroughCensusArea_2015to2045">Alaska Department of Labor and Workforce Development, 2015 to 2045<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, top-down adjustment, scenario analysis, state and county)</p></a></li>
 </b>
@@ -275,6 +277,47 @@ to invest in the project as part of my MLIS degree path.
 <ul id="projectionsearchUL">
 <hr>
 	
+<li data-method="cc, extr" data-geog="state, county">
+<H2 id="OKCommerce_Oklahoma_StateCounty_2012to2075" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://www.okcommerce.gov/doing-business/data-reports/census-2020-demographics/" target="_blank">Oklahoma Department of Commerce, 2012 to 2075
+<p style="margin:0px;font-size:15px;font-weight:normal">(cohort component, trend extrapolation of total population, state, county)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+<b>Report or project title:</b> Oklahoma State and County Population Projections Through 2075<br>
+<b>Publisher and year of publication:</b> Oklahoma Department of Commerce, publication year not specified<br>
+<b>Description and notes:</b> State and and county population projections for Oklahoma. 
+The statewide model uses a cohort component method (not specified by name, but apparent given the data and methods information), 
+and county projections use linear trend extrapolation of total population. Differences between the state and sum-of-counties by year 
+are added to the state population.<br>
+<b>Collected materials:</b> <a STYLE="text-decoration:none;display:inline;padding:0" href="https://drive.google.com/open?id=1cnht3wD2RWpexbXWJKF8Yw5vAXkXCzHq" target="_blank">
+Compressed (1MB ZIP) file containing report (PDF)</a> 
+<br>
+&ndash;Information provided by Eddie Hunsinger, April 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
+<li data-method="scen, struct" data-geog="state, county, region">
+<H2 id="NVTax_Nevada_StateCountyCSA_2016to2035" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
+href="https://tax.nv.gov/Publications/Population_Statistics_and_Reports/" target="_blank">Nevada Department of Taxation, 2016 to 2035
+<p style="margin:0px;font-size:15px;font-weight:normal">(scenario analysis, structural model, state, region, county)</p></a>
+</font></strong></H2>
+<p style="margin:0px;font-size:15px">
+<b>Report or project title:</b> Nevada County Population Projections, 2016 to 2035<br>
+<b>Publisher and year of publication:</b> Nevada Department of Taxation, 2016<br>
+<b>Description and notes:</b> From the report (page 2, PDF page 4): "The Regional Economics Models, Inc. (REMI) model was used for these projections. 
+The REMI model provides information for all 17 counties by 23 major economic sectors. It looks at the dynamic economic and demographic 
+relationships between the 17 counties and the United States as a total. The 20 year projections are produced annually and will change 
+as more historical data becomes available or is revised. Because REMI looks at the relationship between changes in the economy and in 
+population, it is a useful tool for looking at how changes in either the structure of the population or the economy can impact the other. 
+For much of its history, Nevada’s growth had been driven by migration through job creation in the accommodations and food services sector 
+(the category which covers hotel casinos)."<br>
+<b>Collected materials:</b> <a STYLE="text-decoration:none;display:inline;padding:0" href="https://drive.google.com/open?id=1Dz_HwOfKh2KORBR8_3is79fUBOg0Ig-X" target="_blank">
+Compressed (1MB ZIP) file containing report (PDF)</a> 
+<br>
+&ndash;Information provided by Eddie Hunsinger, April 2021
+<b><a STYLE="text-decoration:none;display:inline;padding:0" href="#TopSearch">^</a></b></li>
+</p></H2>
+
 <li data-method="cc, stoch" data-geog="state">
 <H2 id="CEDA_California_State_2000to2050" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://escholarship.org/uc/item/9x32c1kq" target="_blank">Center on the Economics and Demography of Aging, UC Berkeley, 2000 to 2050
@@ -317,7 +360,7 @@ Compressed (1MB ZIP) file containing technical report (PDF); statewide middle, h
 <li data-method="empl, hous, scen, struct" data-geog="state, county, region">
 <H2 id="ISER_Alaska_StateRegionBoroughCensusArea_2000to2025" style="margin:0px;font-size:15px"><br><strong><a STYLE="text-decoration:none" 
 href="https://iseralaska.org/publications/?id=1015" target="_blank">Institute on Social and Economic Research, University of Alaska Anchorage, 2000 to 2025
-<p style="margin:0px;font-size:15px;font-weight:normal">(employment-based, housing-based, scenario analysis, structural, state, region and county)</p></a>
+<p style="margin:0px;font-size:15px;font-weight:normal">(employment-based, housing-based, scenario analysis, structural model, state, region and county)</p></a>
 </font></strong></H2>
 <p style="margin:0px;font-size:15px">
 <b>Report or project title:</b> Economic Projections for Alaska and the Southern Railbelt, 2000-2025<br>
