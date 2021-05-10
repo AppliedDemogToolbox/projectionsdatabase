@@ -1,5 +1,4 @@
 
-
 <html>
 
 <head>
@@ -98,7 +97,7 @@ hr {
 	outline: none;
 	}
 	details > summary {
-	list-style-type: none;
+	list-style-type: none !important;
 	list-style-position: outside; 
 	color: #006699;
 	cursor: pointer; 
@@ -166,7 +165,7 @@ please send a message to me
 </font>
 
 <input type="text"  TEXT="#006699" id="projectionsearchInput" onkeyup="projectionsearchFunction()" 
-placeholder="Filter individual resources by source, period covered, method attribute, or geographic level">
+placeholder="Filter individual resources by creator, period covered, method attribute, or geographic level">
 
 <select id="methodselect" onChange="projectionsearchFunction()">
 	<option value="all">Method attributes (all)</option>
@@ -195,7 +194,7 @@ placeholder="Filter individual resources by source, period covered, method attri
 <ul id="projectionsearchUL">
 <br><br>
 <b>
-  <ul id="projectionsearchUL"><u>Individual Resources Listed by Source and Period Covered</u></br>
+  <ul id="projectionsearchUL"><u>Individual Resources Listed by Creator and Period Covered</u></br>
 </b>
 
 <details>
