@@ -1,9 +1,14 @@
 # ProjectionsDatabase 
-State and Local Population Projections Database - an informal collection of population projections. 
-Information about the projections included in this Database is for independent analysis, and is not authoritative for any of the works included.
+The State and Local Population Projections Database brings together population projection information and materials from different sources through survey response
+and resource sharing. The database can be used by population projection developers and researchers for the study and analysis of population projection methods, and
+associated uncertainty. Historical as well as current population projections are included in the database, it includes a mix of sources and methods, and it can be added to over
+time. The design of the database is United States-focused, but projections from other countries can be added too. The database is for independent analysis of population
+projections, and is not authoritative for any of the included works. Database items are hosted primarily on Google Drive, and backed up periodically, and the webpage and
+supporting content for the database are hosted on GitHub.
+
 
 Web page with information about the work, and how to contribute: https://applieddemogtoolbox.github.io/projectionsdatabase/
 Collected responses with linked files: https://tinyurl.com/PopProjDatabaseResponses
 Data points from collected materials: https://tinyurl.com/PopProjDatabasePoints
 
-Eddie Hunsinger, April 2021
+Eddie Hunsinger, May 2021
